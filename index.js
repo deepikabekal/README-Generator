@@ -15,7 +15,7 @@ const questions = [
             }
             else
             {
-                console.log("Enter application name.");
+                console.log("Invalid entry. Try again!");
                 return false;
             }
         }
@@ -31,7 +31,7 @@ const questions = [
             }
             else
             {
-                console.log("Enter description for the application");
+                console.log("Invalid entry. Try again!");
                 return false;
             }
         }
@@ -47,7 +47,7 @@ const questions = [
             }
             else
             {
-                console.log("Enter instructions to install the application.");
+                console.log("Invalid entry. Try again!");
                 return false;
             }
         }
@@ -64,7 +64,7 @@ const questions = [
             }
             else
             {
-                console.log("Enter Usage information");
+                console.log("Invalid entry. Try again!");
                 return false;
             }
         }
@@ -86,7 +86,7 @@ const questions = [
            }
            else
            {
-               console.log("Enter contribution guidelines.");
+               console.log("Invalid entry. Try again!");
                return false;
            }
        }
@@ -102,7 +102,7 @@ const questions = [
             }
             else
             {
-                console.log("Enter test instructions.");
+                console.log("Invalid entry. Try again!");
                 return false;
             }
         }
@@ -118,7 +118,7 @@ const questions = [
             }
             else
             {
-                console.log("Enter GitHub username.");
+                console.log("Invalid entry. Try again!");
                 return false;
             }
         }
@@ -134,7 +134,7 @@ const questions = [
             }
             else
             {
-                console.log("Enter email address");
+                console.log("Invalid entry. Try again!");
                 return false;
             }
         }
