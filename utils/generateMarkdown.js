@@ -74,7 +74,7 @@ function renderLicenseBadge(license) {
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
-  console.log("license",license);
+  //console.log("license",license);
   if (license === [])
   {
     return "";
@@ -90,7 +90,7 @@ function renderLicenseLink(license) {
     }
   })
 
-  console.log("license link", licenseLink);
+  //console.log("license link", licenseLink);
 
 }
 
@@ -101,12 +101,12 @@ function renderLicenseSection(license) {
   {
     return "";
   }
-  console.log("data", license);
+  //console.log("data", license);
   renderLicenseLink(license)  
   return `
   ## License
   Licensed under the following:
-  ${licenseLink.join("\n")}`
+  * ${licenseLink.join("\n * ")}`
 
 }
 
@@ -114,7 +114,7 @@ function renderLicenseSection(license) {
 function addLicense () {
   if (userChoice)
   {
-    return `[License](#license)`;
+    return `* [License](#license)`;
   }
   else
   {
@@ -132,11 +132,11 @@ function generateMarkdown(data) {
   ${data.description}
 
   ## Table of Contents
-  [Installation](#installation)
-  [Usage](#usage)
-  [Contributing](#contributing)
-  [Test](#test)
-  [Questions](#questions)
+  * [Installation](#installation)
+  * [Usage](#usage)
+  * [Contributing](#contributing)
+  * [Test](#test)
+  * [Questions](#questions)
   ${addLicense()}
 
   ## Installation
@@ -153,8 +153,8 @@ function generateMarkdown(data) {
 
   ## Questions
   If you have any queries please contact me at,
-  [GitHub](https://www.github.com/${data.username})
-  [Email](${data.email})
+  * [GitHub](https://www.github.com/${data.username})
+  * [Email](${data.email})
 
   ${renderLicenseSection(data.license)}
 `;

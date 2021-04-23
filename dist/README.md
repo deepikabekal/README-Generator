@@ -1,37 +1,37 @@
 
-  # deepika
-  ![License](https://img.shields.io/badge/License-Boost%201.0-lightblue.svg) ![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)
+  # skudh
+  ![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg) ![License](https://img.shields.io/badge/License-Boost%201.0-lightblue.svg)
 
   ## Description
-  deepika
+  sdkfh
 
   ## Table of Contents
-  [Installation](#installation)
-  [Usage](#usage)
-  [Contributing](#contributing)
-  [Test](#test)
-  [Questions](#questions)
-  [License](#license)
+  * [Installation](#installation)
+  * [Usage](#usage)
+  * [Contributing](#contributing)
+  * [Test](#test)
+  * [Questions](#questions)
+  * [License](#license)
 
   ## Installation
-  jdnjd
+  sdjhf
 
   ## Usage
-  dsjfhsdjk
+  kjsdfh
 
   ## Contributing
-  ds
+  kedhuq
 
   ## Test
-  dsfsf
+  weifh
 
   ## Questions
   If you have any queries please contact me at,
-  https://www.github.com/we
-  [Email](feweff)
+  * [GitHub](https://www.github.com/efh)
+  * [Email](efh)
 
   
   ## License
   Licensed under the following:
-  https://www.boost.org/LICENSE_1_0.txt
-https://www.gnu.org/licenses/gpl-3.0
+  * https://opensource.org/licenses/Apache-2.0
+ * https://www.boost.org/LICENSE_1_0.txt
