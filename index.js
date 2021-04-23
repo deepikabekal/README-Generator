@@ -1,7 +1,9 @@
 // TODO: Include packages needed for this application
 const inquirer = require("inquirer");
 const fs = require("fs");
-const { title } = require("process");
+const generateMarkdown = require ('./utils/generateMarkdown');
+const fileName = "./dist/README.md"
+
 // TODO: Create an array of questions for user input
 const questions = [
     {
@@ -38,7 +40,7 @@ const questions = [
     },
     {
         type : "input",
-        name : "instructions",
+        name : "installation",
         message : "Enter instructions to install the application.",
         validate : instructionInput => {
             if (instructionInput)
@@ -109,7 +111,7 @@ const questions = [
     },
     {
         type : "input",
-        name : "github",
+        name : "username",
         message : "Enter GitHub username.",
         validate : githubInput => {
             if (githubInput)
@@ -138,12 +140,28 @@ const questions = [
                 return false;
             }
         }
-    }
+    },
 ];
 
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, readmePage) {
+    return new Promise ((resolve, reject) => {
+        fs.writeFile(fileName, readmePage, err => {
+            if (err) 
+            {
+                reject(err);
+                return;
+            }
+
+            resolve({
+                ok : true,
+                message : "File Created"
+            })
+        });
+    });
+    
+};
 
 // TODO: Create a function to initialize app
 function init () {
@@ -153,4 +171,15 @@ function init () {
 
 // Function call to initialize app
 init()
-.then (data => console.log(data));
+.then (data => {
+    return generateMarkdown(data);
+})
+.then (readmePage => {
+    return writeToFile(fileName, readmePage);
+})
+.then (writeFileResponse => {
+    console.log(writeFileResponse);
+})
+.catch (err => {
+    console.log(err);
+})
