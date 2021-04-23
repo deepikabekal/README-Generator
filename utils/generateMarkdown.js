@@ -1,4 +1,6 @@
-
+var licenseBadge = [];
+var licenseLink = [];
+var userChoice = false;
 const licenseArr = [
   {
     name : "Apache 2.0 License",
@@ -26,7 +28,7 @@ const licenseArr = [
     link : "(https://opensource.org/licenses/ISC)"
   },
   {
-    name : "MIT",
+    name : "The MIT License",
     badge : "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]",
     link : "(https://opensource.org/licenses/MIT)"
   },
@@ -47,24 +49,81 @@ const licenseArr = [
 // If there is no license, return an empty string
 
 function renderLicenseBadge(license) {
-  
+  if (license === [])
+  {
+    return "";
+  }
+  userChoice = true;
+  licenseArr.forEach(item => {
+    for (var i= 0 ; i < license.length ; i++)
+    {
+      if (item.name === license[i])
+      {
+        licenseBadge.push(item.badge);
+      }
+    }
+  }) 
+
+  return `${licenseBadge.join(" ")}`
   
 }
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
+  console.log("license",license);
+  if (license === [])
+  {
+    return "";
+  }
+
+  licenseArr.forEach(item => {
+    for (var i= 0 ; i < license.length ; i++)
+    {
+      if (item.name === license[i])
+      {
+        licenseLink.push(item.link);
+      }
+    }
+  })
+
+  console.log("license link", licenseLink);
 
 }
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) {}
+function renderLicenseSection(license) {
+  if (license === [])
+  {
+    return "";
+  }
+  console.log("data", license);
+  renderLicenseLink(license)  
+  return `
+  ## License
+  Licensed under the following:
+  ${licenseLink.join("\n")}`
+
+}
+
+// adding the License section to the table of contents
+function addLicense () {
+  if (userChoice)
+  {
+    return `[License](#license)`;
+  }
+  else
+  {
+    return "";
+  }
+}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `
   # ${data.title}
+  ${renderLicenseBadge(data.license)}
 
   ## Description
   ${data.description}
@@ -75,6 +134,7 @@ function generateMarkdown(data) {
   [Contributing](#contributing)
   [Test](#test)
   [Questions](#questions)
+  ${addLicense()}
 
   ## Installation
   ${data.installation}
@@ -92,6 +152,8 @@ function generateMarkdown(data) {
   If you have any queries please contact me at,
   https://www.github.com/${data.username}
   [Email](${data.email})
+
+  ${renderLicenseSection(data.license)}
 `;
 }
 
