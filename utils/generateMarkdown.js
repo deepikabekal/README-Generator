@@ -85,12 +85,13 @@ function renderLicenseLink(license) {
     {
       if (item.name === license[i])
       {
-        licenseLink.push(item.link);
+        var licenseObj = {name : item.name , link : item.link};
+        licenseLink.push(licenseObj);
       }
     }
   })
 
-  //console.log("license link", licenseLink);
+  console.log("license link", licenseLink);
 
 }
 
@@ -102,13 +103,22 @@ function renderLicenseSection(license) {
     return "";
   }
   //console.log("data", license);
-  renderLicenseLink(license)  
+  renderLicenseLink(license) 
   return `
   ## License
   Licensed under the following:
-  * ${licenseLink.join("\n * ")}`
+  * ${licenseLink.map(item => {
+    return `[${item.name}](${item.link})`
+  }).join(" \n * ")}`
 
 }
+
+// function example (x){
+//   x.map(item => {
+//     console.log(`[${item.name}](${item.link})`)
+//   }).join (" ")
+// }
+// console.log(example(licenseArr));
 
 // adding the License section to the table of contents if the userChoice is true
 function addLicense () {

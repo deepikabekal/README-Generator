@@ -1,6 +1,6 @@
 
   # zxc
-  ![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)
+  ![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg) ![License](https://img.shields.io/badge/License-Boost%201.0-lightblue.svg)
 
   ## Description
   zxc
@@ -20,7 +20,7 @@
   zxc
 
   ## Contributing
-   zxc
+  zxc
 
   ## Test
   zxc
@@ -33,4 +33,5 @@
   
   ## License
   Licensed under the following:
-  * https://opensource.org/licenses/Apache-2.0
+  * [Apache 2.0 License](https://opensource.org/licenses/Apache-2.0) 
+ * [Boost Software License 1.0](https://www.boost.org/LICENSE_1_0.txt)
