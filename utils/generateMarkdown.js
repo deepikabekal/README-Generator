@@ -91,7 +91,7 @@ function renderLicenseLink(license) {
     }
   })
 
-  console.log("license link", licenseLink);
+  //console.log("license link", licenseLink);
 
 }
 
@@ -113,12 +113,6 @@ function renderLicenseSection(license) {
 
 }
 
-// function example (x){
-//   x.map(item => {
-//     console.log(`[${item.name}](${item.link})`)
-//   }).join (" ")
-// }
-// console.log(example(licenseArr));
 
 // adding the License section to the table of contents if the userChoice is true
 function addLicense () {
