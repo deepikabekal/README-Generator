@@ -14,7 +14,7 @@
   * [License](#license)
 
   ## Installation
-  zxc
+  xzc
 
   ## Usage
   zxc

@@ -158,10 +158,8 @@ function writeToFile(fileName, readmePage) {
                 return;
             }
 
-            resolve({
-                ok : true,
-                message : "File Created"
-            })
+            resolve("README file is created! You can find your README.md file in 'dist' folder.")
+            
         });
     });
     
