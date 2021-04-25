@@ -1,6 +1,6 @@
 
   # Sample Readme
-  ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+  ![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg) ![License](https://img.shields.io/badge/License-Boost%201.0-lightblue.svg)
 
   ## Description
   A good description is clear, short and to the point. Describe the importance of your project and what it does.
@@ -20,17 +20,18 @@
   Provide instructions and examples for use.
 
   ## Contributing
-  Guidelines for other developer who would like to contribute to your project.
+  Guidelines for other developers who would like to contribute to your project.
 
   ## Test
-  Write tests for your application and provide examples.
+  Write tests for your project and provide examples
 
   ## Questions
   If you have any queries please contact me at,
-  * [GitHub](https://www.github.com/Provide github username)
+  * [GitHub](https://www.github.com/username)
   * [Email](email@email.com)
 
   
   ## License
   Licensed under the following:
-  * [The MIT License](https://opensource.org/licenses/MIT)
+  * [Apache 2.0 License](https://opensource.org/licenses/Apache-2.0) 
+ * [Boost Software License 1.0](https://www.boost.org/LICENSE_1_0.txt)
