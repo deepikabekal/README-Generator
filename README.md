@@ -38,6 +38,7 @@ node index.js
 2. Answer all the questions. 
 
 ## Preview
+<img src="assets/images/Walkthrough.mp4" width=200 height = 200>
 
 ## User Story
 ```
