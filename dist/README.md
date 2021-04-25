@@ -1,9 +1,9 @@
 
-  # zxc
-  ![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg) ![License](https://img.shields.io/badge/License-Boost%201.0-lightblue.svg)
+  # Sample Readme
+  ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
   ## Description
-  zxc
+  A good description is clear, short and to the point. Describe the importance of your project and what it does.
 
   ## Table of Contents
   * [Installation](#installation)
@@ -14,24 +14,23 @@
   * [License](#license)
 
   ## Installation
-  xzc
+  Provide step-by-step description of how to get the development environment running.
 
   ## Usage
-  zxc
+  Provide instructions and examples for use.
 
   ## Contributing
-  zxc
+  Guidelines for other developer who would like to contribute to your project.
 
   ## Test
-  zxc
+  Write tests for your application and provide examples.
 
   ## Questions
   If you have any queries please contact me at,
-  * [GitHub](https://www.github.com/zxc)
-  * [Email](zxc)
+  * [GitHub](https://www.github.com/Provide github username)
+  * [Email](email@email.com)
 
   
   ## License
   Licensed under the following:
-  * [Apache 2.0 License](https://opensource.org/licenses/Apache-2.0) 
- * [Boost Software License 1.0](https://www.boost.org/LICENSE_1_0.txt)
+  * [The MIT License](https://opensource.org/licenses/MIT)
